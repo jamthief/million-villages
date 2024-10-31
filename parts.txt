@@ -1,0 +1,87 @@
+[prefix]
+Great 
+Little 
+New 
+Fort 
+
+[initial]
+B
+C
+Ch
+Br
+D
+Dr
+F
+Fr
+Fl
+G
+Gr
+H
+L
+M
+N
+P
+Pr
+Pl
+R
+S
+S
+Sl
+T
+Tr
+W
+Wr
+
+[vowelGroup]
+ar
+a
+e
+in
+on
+u
+un
+en
+
+[ingPart]
+n
+ning
+ding
+d
+(blank)
+t
+fing
+
+[modifier]
+hill
+well
+hattan
+burg
+ville
+ham
+field
+ton
+town
+bridge
+bury
+wood
+ford
+hall
+ston
+way
+stone
+borough
+ley
+head
+bourne
+pool
+worth
+
+[suffix]
+-on-sea
+ Bay
+ Market
+ Cross
+ Bridge
+ Gardens
+ City
+ Town
