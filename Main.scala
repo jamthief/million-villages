@@ -49,12 +49,16 @@ object Main {
     // last entry
     data(oldHeader) = currentList.toList
 
-    val millionSet: Set[String] = Set()
-    while (millionSet.size < 1000000) {
-      millionSet += generateTownName(data)
+    val millionList: ListBuffer[String] = ListBuffer()
+    while (millionList.size < 1_000_000) {
+      millionList += generateTownName(data)
     }
-    println("name,latitude,longitude")
-    println(millionSet.map(new City(_, randomLatitude(), randomLongitude())).mkString("\n"))
+    println("id,name,latitude,longitude")
+    var i = 0
+    println(millionList.map(n => {
+      i += 1
+      new City(i, n, randomLatitude(), randomLongitude())
+    }).mkString("\n"))
   }
 
   def generateTownName(parts: Map[String, List[String]]) = {
@@ -92,6 +96,6 @@ object Main {
   }
 }
 
-class City(name: String, latitude: Double, longitude: Double) {
-  override def toString: String = s"$name,$latitude,$longitude"
+class City(id: Int, name: String, latitude: Double, longitude: Double) {
+  override def toString: String = s"$id,$name,$latitude,$longitude"
 }
