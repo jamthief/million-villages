@@ -57,7 +57,7 @@ object Main {
     var i = 0
     println(millionList.map(n => {
       i += 1
-      new City(i, n, randomLatitude(), randomLongitude())
+      new Village(i, n, randomLatitude(), randomLongitude())
     }).mkString("\n"))
   }
 
@@ -96,6 +96,6 @@ object Main {
   }
 }
 
-class City(id: Int, name: String, latitude: Double, longitude: Double) {
+class Village(id: Int, name: String, latitude: Double, longitude: Double) {
   override def toString: String = s"$id,$name,$latitude,$longitude"
 }
